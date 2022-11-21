@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+background-color: gray;
+font-size: 20px;
+border-style: solid;
+}
+</style>
+</head>
+<body>
+<div class="contatiner col-sm-8 col-md-12 col-md-offset-2" id="form">
+<h1>Comprovante de inscrição</h1>
+	<h3>
+	Certificamos que o Sr.(a)<span th:text="${nome}"></span> Dono do rg <span th:text="${rg}"></span>, está devidamente inscrito fs XVII corrida de divino espírito santo ano 2019 sob o n de inscrição, 
+<span th:text="${nuemero}"></span>
+<br>
+	<P>Jaboatão dos guararapes</P><span th:text="${data}"></span>
+	<p>assinatura do responsavel</p><span th:text="${nome}"></span>
+</h3>
+</div>
+</body>
+</html>

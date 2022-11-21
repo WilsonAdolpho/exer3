@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+background-color: gray;
+font-size: 30px;
+}
+#form{
+border-style: solid;
+}
+</style>
+</head>
+<body>
+<div id="centralizar">
+		<form action="/salvarcadastro" th:object="${cadastro}" method="post" id="form">
+			<input type="hidden" th:field="*{codigo}">
+			<div>
+				<label for="nome">Nome</label> <input type="text" th:field="*{nome}"
+					 id="nome" placeholder="Nome do contato">
+			</div>
+			<div>
+				<label for="nome">data de inscrição</label> <input type="date" th:field="*{dataInscricao}"
+					 id="data" placeholder="data de inscrição">
+			</div>
+			<div >
+				<label for="nome">número da inscrição</label> <input type="number" th:field="*{numeroInscricao}"
+					 id="nuemero" placeholder="número de inscrição">
+			</div>
+			<div >
+				<label for="nome">data de nascimento</label> <input type="date" th:field="*{dataNascimento}"
+					 id="nome" placeholder="data de nascimento">
+			</div>
+			<div >
+				<label for="nome">endereço</label> <input type="text" th:field="*{endereco}"
+					 id="nome" placeholder="endereço">
+			</div>
+			<div >
+				<label for="nome">número</label> <input type="number" th:field="*{numero}"
+					 id="nome" placeholder="númeoro">
+			</div>
+			<div >
+				<label for="nome">complemento</label> <input type="text" th:field="*{complemento}"
+					 id="nome" placeholder="complemento">
+			</div>
+			<div >
+				<label for="nome">bairro</label> <input type="text" th:field="*{bairro}"
+					 id="nome" placeholder="bairro">
+			</div>
+		 	<div >
+				<label for="nome">cidade</label> <input type="text" th:field="*{cidade}"
+					 id="nome" placeholder="cidade">
+			</div>
+			<div >
+				<label for="nome">estado</label> <input type="text" th:field="*{estado}"
+					 id="nome" placeholder="estado">
+			</div>
+			<div >
+				<label for="nome">telelefone</label> <input type="number" th:field="*{telefone}"
+					 id="nome" placeholder="telefone">
+			</div>			
+			<div >
+				<label for="nome">convenio</label> <input type="text" th:field="*{convenio}"
+					 id="nome" placeholder="convenio">
+			</div>
+			<div >
+				<label for="nome">equipe</label> <input type="text" th:field="*{equipe}"
+					 id="nome" placeholder="equipe">
+			</div>
+
+			<div >
+			
+				<label for="nome">rg</label> <input type="text" th:field="*{rg}"
+					 	id="rg" placeholder="rg"><P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
+			</div>
+			<button type="submit" ID="botão">Enviar</button>
+		</form>
+
+	</div>
+</body>
+</html>
